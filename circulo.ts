@@ -14,9 +14,11 @@ export default class Circulo extends FiguraGeometrica{
     setRadio(radio: number) {
         this.radio = radio
     }
-    calcularArea(){
-        let area: number = Math.PI * Math.pow(2, this.radio)
+    calcularArea() {
+        let raiz: number = Math.pow(this.radio, 2)
+        let area: number = Math.PI * raiz
         return `el area del circulo es ${area}`
+        
     }
     calcularPerimetro() {
         let perimetro: number = 2 * Math.PI * (this.radio)

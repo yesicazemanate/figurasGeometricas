@@ -25,7 +25,7 @@ export default class TrianguloRectangulo extends FiguraGeometrica{
      return `el area del triangulo rectangulo es ${area}`   
     }
     calcularHipotenusa() {
-        let hipotenusa: number = Math.sqrt(Math.pow(2, this.altura) + Math.pow(2, this.base))
+        let hipotenusa: number = Math.sqrt(Math.pow(this.altura, 2) + Math.pow(this.base,2))
         return hipotenusa
     }
 
